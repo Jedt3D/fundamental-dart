@@ -1,0 +1,10 @@
+name: ex19_generics
+description: Lesson ex19-generics of the TDD Dart course.
+version: 1.0.0
+
+environment:
+  sdk: ^3.3.1
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0

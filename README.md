@@ -17,6 +17,11 @@ ships with:
 
 ## 1. What you'll learn
 
+The course is split into four tracks. Work through them in order, or
+jump around once you've done track I.
+
+### Track I — Language fundamentals (lessons 01–15)
+
 | # | Lesson | Topic |
 |---|---|---|
 | 01 | `ex01-hello` | Hello world, entry points, `main` |
@@ -35,7 +40,42 @@ ships with:
 | 14 | `ex14-maps` | Maps and map iteration |
 | 15 | `ex15-iterables` | Custom `Iterable` and `Iterator` |
 
-Across the 15 lessons there are **57 failing tests** waiting for you.
+### Track II — Dart-specific features (lessons 16–20)
+
+| # | Lesson | Topic |
+|---|---|---|
+| 16 | `ex16-async` | `Future`, `async`/`await`, `Future.wait` |
+| 17 | `ex17-streams` | `Stream`, `async*`, `StreamController` |
+| 18 | `ex18-mixins-extensions` | `mixin`, `extension` methods |
+| 19 | `ex19-generics` | Generics, bounds, `typedef` |
+| 20 | `ex20-records-patterns` | Dart 3 records & pattern matching |
+
+### Track III — Classic data structures (lessons 21–25)
+
+| # | Lesson | Topic |
+|---|---|---|
+| 21 | `ex21-stack` | Generic `Stack<T>` (LIFO) |
+| 22 | `ex22-queue` | Generic `Queue<T>` (FIFO) |
+| 23 | `ex23-linked-list` | Singly linked list |
+| 24 | `ex24-bst` | Binary search tree |
+| 25 | `ex25-min-heap` | Min-heap / priority queue |
+
+### Track IV — Design patterns & SOLID (lessons 26–35)
+
+| # | Lesson | Topic |
+|---|---|---|
+| 26 | `ex26-singleton` | Singleton (factory constructor) |
+| 27 | `ex27-factory` | Factory method |
+| 28 | `ex28-observer` | Observer / pub-sub |
+| 29 | `ex29-strategy` | Strategy |
+| 30 | `ex30-decorator` | Decorator |
+| 31 | `ex31-srp` | **S** — Single Responsibility |
+| 32 | `ex32-ocp` | **O** — Open/Closed |
+| 33 | `ex33-lsp` | **L** — Liskov Substitution |
+| 34 | `ex34-isp` | **I** — Interface Segregation |
+| 35 | `ex35-dip` | **D** — Dependency Inversion |
+
+Across the 35 lessons there are **163 failing tests** waiting for you.
 
 ---
 
