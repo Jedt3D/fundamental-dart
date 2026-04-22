@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Dart: run current file",
+      "type": "dart",
+      "request": "launch",
+      "program": "${file}"
+    },
+    {
+      "name": "Dart: test current package",
+      "type": "dart",
+      "request": "launch",
+      "program": "test",
+      "cwd": "${fileWorkspaceFolder}"
+    }
+  ]
+}

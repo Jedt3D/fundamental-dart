@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "dart: pub get (all lessons)",
+      "type": "shell",
+      "command": "./tool/pub_get_all.sh",
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "dart: test (all lessons)",
+      "type": "shell",
+      "command": "./tool/run_all_tests.sh",
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "dart: test (current lesson)",
+      "type": "shell",
+      "command": "dart test",
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [],
+      "group": "test"
+    }
+  ]
+}
