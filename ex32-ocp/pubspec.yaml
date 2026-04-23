@@ -1,0 +1,10 @@
+name: ex32_ocp
+description: Lesson ex32-ocp of the TDD Dart course.
+version: 1.0.0
+
+environment:
+  sdk: ^3.11.5
+
+dev_dependencies:
+  lints: ^6.1.0
+  test: ^1.24.0

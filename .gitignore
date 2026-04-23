@@ -4,7 +4,13 @@ out/
 !**/src/test/**/out/
 
 ### VS Code ###
-.vscode/
+# We ship a shared `.vscode/` with recommended settings/launch configs for
+# the whole classroom. Keep user-specific files out of git.
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
 
 ### Mac OS ###
 .DS_Store
