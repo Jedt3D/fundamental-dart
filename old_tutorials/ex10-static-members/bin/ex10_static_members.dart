@@ -1,4 +1,4 @@
-import 'package:ex10_static_members/math.dart' as math;
+import '../lib/math.dart' as math;
 
 void main() {
   introduction();

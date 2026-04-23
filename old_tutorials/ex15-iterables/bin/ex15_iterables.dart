@@ -1,4 +1,4 @@
-import 'package:ex15_iterables/squares.dart';
+import '../lib/squares.dart';
 
 void main() {
   whatsAnIterable();
