@@ -4,11 +4,11 @@ A hands-on, **Ruby-Monk-style** tour of the Dart programming language.
 Each lesson is a small Dart package under `exNN-<topic>/`, and each one
 ships with:
 
-1. A short **story** (`README.md`) that explains the idea.
-2. A **stub library** (`lib/`) where you write the code.
+1. A **story** (`README.md`) that explains the idea, the design
+   thinking, and what we expect before you pick up the keyboard.
+2. A **stub library** (`lib/`) where you write the code. The doc
+   comments in the stubs tell you what to build — they are the spec.
 3. A **failing test suite** (`test/`) that tells you when you're done.
-4. A **reference solution** (`bin/challenge.dart`) you can peek at
-   if you get stuck.
 
 > **Red → Green → Refactor.** Run the tests, see red, make them green,
 > then tidy up. That's the whole learning loop.
@@ -75,7 +75,32 @@ jump around once you've done track I.
 | 34 | `ex34-isp` | **I** — Interface Segregation |
 | 35 | `ex35-dip` | **D** — Dependency Inversion |
 
-Across the 35 lessons there are **163 failing tests** waiting for you.
+### Track V — Project capstones (lessons 36–39)
+
+Longer, project-shaped lessons where you stitch together what you've
+already learned. Each one has a more detailed README describing the
+design before you implement.
+
+| # | Lesson | Topic |
+|---|---|---|
+| 36 | `ex36-library-capstone` | Library domain (Book / Member / Library / Report) |
+| 37 | `ex37-rock-paper-scissors` | RPS with injected `MoveSource` and match engine |
+| 38 | `ex38-csv-pipeline` | CSV reader / writer / query service (`package:csv`) |
+| 39 | `ex39-sqlite-store` | In-memory SQLite with prepared statements (`package:sqlite3`) |
+
+### Track VI — Functional-style Dart (lessons 40–42)
+
+Higher-order functions, composition, and accumulators — the same
+patterns Ruby developers reach for, expressed with Dart's standard
+library (`package:collection` for `zip` and `groupBy`).
+
+| # | Lesson | Topic |
+|---|---|---|
+| 40 | `ex40-recursion-closures` | Recursion over nested data + closures with captured state |
+| 41 | `ex41-functional-style` | `zip`, `map`, lambdas as values, function composition |
+| 42 | `ex42-reduce-accumulators` | `fold`, `groupBy`, frequency and multi-field accumulators |
+
+Across the 42 lessons there are **218 failing tests** waiting for you.
 
 ---
 
@@ -90,6 +115,23 @@ Verify:
 ```bash
 dart --version
 ```
+
+### Lesson 39 only: SQLite native library
+
+Track V's lesson on SQLite uses `package:sqlite3`, which dynamically
+loads the real `libsqlite3`. Most systems already have it:
+
+- **macOS**: ships with the OS, nothing to install.
+- **Linux**: `sudo apt install libsqlite3-0` (Debian/Ubuntu) or the
+  equivalent.
+- **Windows**: `libsqlite3` is **not** pre-installed. Download the
+  pre-compiled DLL from [sqlite.org/download.html](https://sqlite.org/download.html)
+  (`sqlite-dll-win-*.zip`) and place `sqlite3.dll` somewhere on your
+  `PATH` — e.g. `C:\Windows\System32` or a folder you add to `PATH`.
+  Alternatively, install it via `choco install sqlite` or
+  `winget install SQLite.SQLite`.
+
+The other 41 lessons have zero native dependencies.
 
 ---
 
@@ -118,8 +160,9 @@ doc comments, make each test pass one at a time, then move on.
 └───────────────────┘
 ```
 
-If you're truly stuck, open `bin/challenge.dart` in the same lesson —
-it contains a worked example of the same ideas.
+If you're truly stuck, re-read the lesson's `README.md` — every lesson
+spells out the design thinking before the mission — and the doc
+comments next to each stub. The test names are the final contract.
 
 ---
 
@@ -174,20 +217,18 @@ These scripts walk every `exNN-*` folder, run `dart pub get`, then
 
 ```
 ex07-functions/
-├── README.md              ← story + challenge
+├── README.md              ← story, design thinking, mission
 ├── analysis_options.yaml  ← lint rules
 ├── pubspec.yaml
-├── bin/
-│   ├── ex07_functions.dart  (runnable demo)
-│   └── challenge.dart       (reference solution — peek if stuck)
 ├── lib/
-│   └── ex07_functions.dart  (YOUR CODE GOES HERE)
+│   └── ex07_functions.dart  (YOUR CODE GOES HERE — stubs + doc comments)
 └── test/
     └── ex07_functions_test.dart  (keep these green)
 ```
 
 `dart test` auto-discovers anything under `test/` that ends in
-`_test.dart`.
+`_test.dart`. There is no `bin/` — we drive everything through the
+test runner, which is how production Dart code is verified too.
 
 ---
 

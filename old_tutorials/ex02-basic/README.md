@@ -36,4 +36,5 @@ dart pub get
 dart test
 ```
 
-Peek at `bin/challenge.dart` for hints when you're stuck.
+The doc comments in `lib/ex02_basic.dart` give you all the hints you
+need.

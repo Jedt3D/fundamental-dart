@@ -90,6 +90,20 @@
       <excludeFolder url="file://$MODULE_DIR$/ex35-dip/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/ex35-dip/build" />
       <excludeFolder url="file://$MODULE_DIR$/ex35-dip/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ex36-library-capstone/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ex36-library-capstone/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ex37-rock-paper-scissors/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ex37-rock-paper-scissors/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ex38-csv-pipeline/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ex38-csv-pipeline/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ex39-sqlite-store/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ex39-sqlite-store/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ex40-recursion-closures/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ex40-recursion-closures/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ex41-functional-style/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ex41-functional-style/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ex42-reduce-accumulators/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ex42-reduce-accumulators/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

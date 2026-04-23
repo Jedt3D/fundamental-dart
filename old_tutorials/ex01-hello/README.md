@@ -6,11 +6,9 @@
 
 ## The story
 
-A Dart program starts life in a function called `main`. You can run a
-program by pointing `dart run` at either:
-
-- a single `.dart` file containing a `main()`, or
-- a **package** folder that contains a `bin/*.dart` file with `main()`.
+A Dart program starts life in a function called `main`. In this course
+we drive everything through `dart test` — the `test/` folder is our
+entry point, and the behaviour of `lib/` is what we grow.
 
 Functions are declared with a return type, a name, and a parameter list:
 
@@ -43,8 +41,10 @@ You should see three red failures. Make them green one at a time.
 
 ## Stuck?
 
-Read the reference solution in `bin/challenge.dart`, or the built-in
-library demo in `bin/ex01_hello.dart`.
+Re-read the doc comments in `lib/ex01_hello.dart` — every function
+has a hint. The test names in `test/ex01_hello_test.dart` are the
+final contract: if the test can see the behaviour, your code is
+right.
 
 ## Extra credit
 
