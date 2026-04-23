@@ -3,7 +3,6 @@
 /// Implement each of the functions below so that `dart test`
 /// turns green. Delete the `throw UnimplementedError(...)`
 /// lines as you go.
-library;
 
 /// Return the greeting `"Hello, <name>!"`.
 ///
@@ -11,6 +10,7 @@ library;
 String greet(String name) {
   throw UnimplementedError('TODO: return "Hello, <name>!"');
 }
+
 
 /// Return the greeting from [greet] but entirely in UPPER CASE.
 ///
