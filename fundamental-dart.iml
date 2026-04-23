@@ -89,6 +89,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ex34-isp/build" />
       <excludeFolder url="file://$MODULE_DIR$/ex35-dip/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/ex35-dip/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ex35-dip/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
