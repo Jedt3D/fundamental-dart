@@ -3,6 +3,7 @@
 /// Implement each of the functions below so that `dart test`
 /// turns green. Delete the `throw UnimplementedError(...)`
 /// lines as you go.
+library;
 
 /// Return the greeting `"Hello, <name>!"`.
 ///
